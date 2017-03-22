@@ -30,6 +30,12 @@
                     <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="237" Margin="146,10,0,0" VerticalAlignment="Top" Width="355" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.IsSharedSizeScope="True"/>
                 </Grid>
             </TabItem>
+            <TabItem Header="API tester" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="54">
+                <Grid Background="#FFE5E5E5">
+                    <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="83,76,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="156" Width="324"/>
+                    <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="125,21,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+                </Grid>
+            </TabItem>
         </TabControl>
 
     </Grid>

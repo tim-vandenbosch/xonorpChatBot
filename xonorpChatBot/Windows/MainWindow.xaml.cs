@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 using xonorpChatBot.Twitch;
+using xonorpChatBot.Beam;
 
 namespace xonorpChatBot.Windows
 {
@@ -116,6 +117,8 @@ namespace xonorpChatBot.Windows
             //}
         }
 
+        
+
         #endregion
 
         #region HelperFunctions
@@ -204,6 +207,17 @@ namespace xonorpChatBot.Windows
             }
             return split;
         }
+        #endregion
+
+        #region apiTester Tab-item
+
+        private async void button1_Click(object sender, RoutedEventArgs e)
+        {
+            BeamApiProxy beamApiProxy = new BeamApiProxy();
+
+            textBlock.Text = await beamApiProxy.GetChannelsFromBeamAsync();
+        }
+
         #endregion
     }
 }

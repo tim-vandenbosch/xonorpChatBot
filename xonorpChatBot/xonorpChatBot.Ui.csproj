@@ -113,6 +113,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\xonorpChatBot.Beam\xonorpChatBot.Beam.csproj">
+      <Project>{bf461644-bb8c-4d86-b318-22edd905c486}</Project>
+      <Name>xonorpChatBot.Beam</Name>
+    </ProjectReference>
     <ProjectReference Include="..\xonorpChatBot.Twitch\xonorpChatBot.Twitch.csproj">
       <Project>{4B2BE8B1-C732-4062-ADB4-C3DDBF4AE478}</Project>
       <Name>xonorpChatBot.Twitch</Name>
