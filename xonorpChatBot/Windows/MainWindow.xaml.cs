@@ -25,7 +25,7 @@ namespace xonorpChatBot.Windows
             connectedStatusBar.Items.Remove(connectedStatus);
             _connected = false;
             _ip = "irc.chat.twitch.tv";
-            _port = 667; // or port 443
+            _port = 6667; // or port 443
             _username = "baerrybot";
             _oauth = "oauth:k1dwds0qzrklcdazlslkcrfuq3qw8i";
             _channel = "haazeyow";
@@ -39,7 +39,14 @@ namespace xonorpChatBot.Windows
             {
                 try
                 {
-                    _twitchHandler = new TwitchHandler(_ip, _port, _username, _oauth, ChannelTextBox.Text);
+                    if (string.IsNullOrEmpty(ChannelTextBox.Text) || ChannelTextBox.Text == "")
+                    {
+                        MessageBox.Show("No channel given!");
+                        return;
+                    }
+                    _channel = ChannelTextBox.Text;
+                    _twitchHandler = new TwitchHandler(_ip, _port, _username, _oauth, _channel);
+
                     _connected = true;
 
                     // layout
