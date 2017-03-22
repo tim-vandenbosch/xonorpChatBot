@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xonorpChatBot", "xonorpChatBot\xonorpChatBot.csproj", "{4F67DB5D-FDD2-4220-9A5F-493011C4B6D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xonorpChatBot.Ui", "xonorpChatBot\xonorpChatBot.Ui.csproj", "{4F67DB5D-FDD2-4220-9A5F-493011C4B6D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xonorpChatBot.data", "xonorpChatBot.data\xonorpChatBot.data.csproj", "{605C4224-6F33-473E-8057-72CA1311113C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xonorpChatBot.Data", "xonorpChatBot.data\xonorpChatBot.Data.csproj", "{605C4224-6F33-473E-8057-72CA1311113C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xonorpChatBot.twitch", "xonorpChatBot.Twitch\xonorpChatBot.twitch.csproj", "{4B2BE8B1-C732-4062-ADB4-C3DDBF4AE478}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xonorpChatBot.Twitch", "xonorpChatBot.Twitch\xonorpChatBot.Twitch.csproj", "{4B2BE8B1-C732-4062-ADB4-C3DDBF4AE478}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xonorpChatBot.Test", "xonorpChatBot.Test\xonorpChatBot.Test.csproj", "{A0D4F6B0-4C26-4B50-BFD5-431664F691AD}"
 EndProject

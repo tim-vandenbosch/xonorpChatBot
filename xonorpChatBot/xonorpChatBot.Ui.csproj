@@ -113,9 +113,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\xonorpChatBot.Twitch\xonorpChatBot.twitch.csproj">
+    <ProjectReference Include="..\xonorpChatBot.Twitch\xonorpChatBot.Twitch.csproj">
       <Project>{4B2BE8B1-C732-4062-ADB4-C3DDBF4AE478}</Project>
-      <Name>xonorpChatBot.twitch</Name>
+      <Name>xonorpChatBot.Twitch</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
