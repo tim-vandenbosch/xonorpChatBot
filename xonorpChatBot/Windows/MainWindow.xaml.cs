@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Media;
 using xonorpChatBot.Twitch;
 using xonorpChatBot.Beam;
+using xonorpChatBot.Beam.proxys;
 
 namespace xonorpChatBot.Windows
 {
@@ -213,7 +214,7 @@ namespace xonorpChatBot.Windows
 
         private async void button1_Click(object sender, RoutedEventArgs e)
         {
-            BeamApiProxy beamApiProxy = new BeamApiProxy();
+            var beamApiProxy = new ChannelApiProxy();
 
             textBlock.Text = await beamApiProxy.GetChannelsFromBeamAsync();
         }
